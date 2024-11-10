@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy's Artventures</title>
+    <link rel="stylesheet" href="{{url_for('.static', filename='styles.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="main-header">Tommy's Artventures</h1>
+            <p class="secondary-header">Explore the world of AI-generated art!</p>
+            {% if username %}
+            <div class="user-menu">
+                <span>Welcome, {{username}}</span>
+
+                <div class="user-dropdown">
+                    <button class="dropbtn">▼</button>
+                    <div class="user-dropdown-options">
+                        <a href="/curate">Curate</a>
+                        <form id="logout" action="/logout" method="post">
+                            <a href="javascript:;" onclick="document.getElementById('logout').submit();">Log out</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <a href="/login" class="login-button">Login</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <article class="art-piece">
+                <img src="{{url_for('.static', filename='art1.jpg')}}" alt="AI Art Piece 1">
+                <h2>Dreamscape Delight</h2>
+                <p>A whimsical journey through a digital dreamland.</p>
+            </article>
+
+            <article class="art-piece">
+                <img src="{{url_for('.static', filename='art2.jpg')}}" alt="AI Art Piece 2">
+                <h2>Neural Nightfall</h2>
+                <p>Experience the serene beauty of a neural network's night.</p>
+            </article>
+
+            <article class="art-piece">
+                <img src="{{url_for('.static', filename='art3.png')}}" alt="AI Art Piece 3">
+                <h2>Abstract Awakening</h2>
+                <p>An explosion of colors and shapes, brought to life by AI.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 USC CTF</p>
+    </footer>
+</body>
+</html>
