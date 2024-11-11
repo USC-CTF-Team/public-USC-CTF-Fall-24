@@ -37,6 +37,12 @@ Archive:  redwoods.zip
 META-INF  Main.class  mistywoods.png
 ```
 
+Some hints that there was a hidden picture:
+* The .jar file is 9.33 MB, most of which is filled by the picture. A .jar file with just code in it would be much smaller.
+* The following text in the adventure game:
+> You find a comfortable spot on the tree branch and look out towards the horizon.
+> It is beautiful in a way that could not be described fully in text... if only there were a picture that showed what this forest looked like.
+
 This is what mistywoods.png looks like:
 ![mistywoods.png](mistywoods.png)
 
