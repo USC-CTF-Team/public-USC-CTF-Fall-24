@@ -1,10 +1,14 @@
 # Writeup for Soundcloud Rapper
 
+author: sophisticated.space
+
+category: misc
+
 ## Step 1
 Listen to the mp4 and realize that the notes are storing some sort of message
 
 ## Step 2
-Tranlate the .mp4 into notes. Either do this by ear, by tuner, or by a midi tranlator. On the treble clef the first sound of the song is all the notes
+Translate the .mp4 into notes. Either do this by ear, by tuner, or by a midi translator. On the treble clef the first sound of the song is all the notes
 
 -F-
  E
@@ -17,7 +21,7 @@ Tranlate the .mp4 into notes. Either do this by ear, by tuner, or by a midi tran
 -E-
 
 ## Step 3
-Tranlate the pitches into numbers
+Translate the pitches into numbers
 - F = 8
 - E = 7
 - D = 6
@@ -29,5 +33,5 @@ Tranlate the pitches into numbers
 - E = 0
 
 ## Step 4
-Tranlaste from base 9 to ascii. You could use a site like: 
+Translate from base 9 to ascii. You could use a site like: 
 https://onlinetools.com/ascii/convert-arbitrary-base-to-ascii
