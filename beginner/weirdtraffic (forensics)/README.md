@@ -1,7 +1,7 @@
 # Writeup for weirdtraffic
 
 author: sophisticated.space
-category: 
+category: beginner (forensics)
 
 
 ## Step 1
