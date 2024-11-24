@@ -35,3 +35,5 @@ Translate the pitches into numbers
 ## Step 4
 Translate from base 9 to ascii. You could use a site like: 
 https://onlinetools.com/ascii/convert-arbitrary-base-to-ascii
+
+**NOTE:** The provided MIDI file (.mid) was not included in the original challenge and is not required to reach the solution. I included it in this writeup to help visualize the challenge and supplement my explanation.
