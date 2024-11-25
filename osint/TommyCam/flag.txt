@@ -1,0 +1,9 @@
+Any of the below flags should be accepted:
+
+CYBORG{Toshiba 5200}
+CYBORG{Toshiba T5200}
+CYBORG{Toshiba T5200/100}
+CYBORG{Toshiba 5200 80386}
+
+
+They should be given 5 chances to answer correctly (to avoid brute-forcers). 

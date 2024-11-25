@@ -1,1 +1,9 @@
-*Write-up and source code will be added soon*
+# Computer Has Virus
+
+author: RJCyber
+
+category: forensics
+
+## Solution
+
+eml > exe > strings > deobfuscate powershell > flag

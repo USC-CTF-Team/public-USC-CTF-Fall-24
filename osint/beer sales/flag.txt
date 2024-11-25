@@ -1,0 +1,7 @@
+Any of the below flags should be accepted:
+
+CYBORG{861,641.36}
+CYBORG{861641.36}
+CYBORG{861641}
+
+They should be given 5 chances to answer correctly (to avoid brute-forcers). 

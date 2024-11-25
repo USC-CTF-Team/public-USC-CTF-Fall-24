@@ -1,0 +1,26 @@
+#!/bin/sh
+
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+export LD_LIBRARY_PATH=/lib
+
+chown -R root:root /
+chmod 0700 /root
+chown -R noob:noob /home/noob
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devpts -o gid=5,mode=0620 devpts /dev/pts
+mount -t devtmpfs -o nosuid,mode=0755 udev /dev
+
+chmod 0400 /flag.txt
+
+insmod corn.ko
+
+echo -e "\nBoot took $(cut -d' ' -f1 /proc/uptime) seconds\n"
+
+setsid cttyhack setuidgid 1000 sh
+
+umount /proc
+umount /sys
+
+poweroff -d 1 -n -f

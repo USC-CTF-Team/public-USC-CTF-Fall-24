@@ -1,0 +1,10 @@
+Easy
+moonlight
+
+Title: 
+beer sales
+
+Challenge Description:
+In August 2024, a lot of beer was sold in Orlando, Florida. But how much, exactly? Lucky for us, they left the exact number on a PDF on an open FTP server! Include the total number of gallons of beer. 
+
+For example: CYBORG{712931.12}

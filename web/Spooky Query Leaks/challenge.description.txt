@@ -1,0 +1,3 @@
+HELP! A ghost just took over my website and database! Can you get back in?
+
+Author: RJCyber

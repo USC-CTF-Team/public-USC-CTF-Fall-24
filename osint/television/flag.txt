@@ -1,0 +1,5 @@
+Any of the below flags should be accepted:
+
+CYBORG{Alfred Rosenheim}
+CYBORG{Alfred F. Rosenheim}
+CYBORG{Alfred H. Rosenheim}
