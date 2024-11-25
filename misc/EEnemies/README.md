@@ -7,7 +7,7 @@ category: misc
 ## Step 0
 The first realization about this challenge is that it is written in Verilog, a hardware description language. Verilog has two assignments, blocking (=) and nonblocking (<=). 
 
-Blocking assignments operate like other coding languages' assign statements, where each line is evaluated before the next one can begin. For example, `a = b; b = a;` would result in both a and b equaling b. However, nonblocking works differently. With nonblocking assignments, each line is evaluated at the edge of a "clock tick," meaning everything updates at once, and uses the previous cycle's values to evaluate its new values. For example, `a = b; b = a;` would result in a and b swapping values.
+Blocking assignments operate like other coding languages' assign statements, where each line is evaluated before the next one can begin. For example, `a = b; b = a;` would result in both a and b equaling b. However, nonblocking works differently. With nonblocking assignments, each line is evaluated at the edge of a "clock tick," meaning everything updates at once, and uses the previous cycle's values to evaluate its new values. For example, `a <= b; b <= a;` would result in a and b swapping values.
 
 Once you understand this, you can begin to understand the challenge script. It swaps letters and also does Caesar cipher-ish stuff on each index.
 
