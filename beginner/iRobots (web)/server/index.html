@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Incredibly secure page</h1>
+		<p></p>
+		<img style="max-width: 200px;" src="irobot.webp" />
+
+        <form id="passwordForm" onsubmit="return checkPassword(event)">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const passwordInput = document.getElementById("password").value;
+            const correctPassword = "as1m0v";
+
+            if (passwordInput === correctPassword) {
+                window.location.href = "secret.html";
+            } else {
+                document.getElementById("error-message").textContent = "Incorrect password. Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
